@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Protfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"> Umer Bashir</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about"> About</a></li>
+                <li><a href="#experience">Work Experience </a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"> Umer Bashir</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Work Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic-umer.png" alt="Umer Bashir Profile">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I am </p>
+            <h1 class="title">Umer Bashir</h1>
+            <p class="section__text__p2"> Software Engineer</p>
+            <div class="btn-container">
+                <button
+                class="btn btn-color-2" 
+                onclick="window.open('./assets/Umer Bashir Resume.pdf')"
+                >Download CV</button>
+                <button
+                class="btn btn-color-1" 
+                onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="social-container">
+                <img src="./assets/linkedin.png" alt="My linkedin Profile"
+                class="icon" onclick="location.href='https://linkedin.com/in/umer-bashir'">
+
+                <img src="./assets/github.png" alt="My Github Profile"
+                class="icon" onclick="location.href='https://github.com/bashirumer'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="./assets/About-picture.png"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p> 2 Interhsips in Software Development</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>3rd Year Student @ Onatrio Tech University</p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                I am currently a 3rd-year Software Engineering student at Ontario Tech University, seeking <strong>Co-op/Internship opportunities for Winter or Summer 2025.</strong>
+                <br><br>
+                With two completed co-ops and my current role as an OER Content Developer at Ontario Tech, I have gained hands-on experience in full-stack development and educational resource creation. My technical expertise spans various languages, frameworks, and tools, which have allowed me to contribute effectively to different projects.
+                <br><br>
+                <strong>Technical Skills:</strong> 
+                <ul>
+                  <li>Languages: HTML, CSS, JavaScript, PHP, Java, Python, C++, MySQL, FPGA</li>
+                  <li>Frameworks & Libraries: .NET, React, React Native, Node.js</li>
+                  <li>Platforms & Tools: Linux, UNIX, GitHub, Docker, SolidWorks, MATLAB, Arduino IDE</li>
+                  <li>Design & Productivity Tools: Canva, Figma, Slack, MS Office 365, Power BI</li>
+                </ul>
+            </p>
+            
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#experience'"
+        />
+      </section>
+      <section id="experience">
+  <h1 class="title">Work Experience</h1>
+  <div class="experience-container">
+    
+    <div class="job">
+      <h3>OER Content Developer <span>May 2023 – Current</span></h3>
+      <p>Ontario Tech University - Oshawa, ON</p>
+      <ul>
+        <li>Developed and launched free course content, significantly reducing student expenses by 12.5%, while ensuring content accessibility and compliance with WCAG 2.0 standards using Pressbooks and H5P.</li>
+        <li>Designed and produced over 10 intricate 3D biological models with Adobe Illustrator, SolidWorks and Shapr3d, for all first-year Biology courses at Ontario Tech University.</li>
+        <li>Enhanced educational websites with Cascade CMS, increasing accessibility by 25% through the integration of technical specifications and system requirements to meet academic goals.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Software Developer Intern <span>May 2024 – Aug 2024</span></h3>
+      <p>EmpowHer Initiatives Inc. - Toronto, ON</p>
+      <ul>
+        <li>Collaborated with a multidisciplinary team of 7 to design and develop a professional networking app targeting women, incorporating multiple front-end and back-end features using React Native.</li>
+        <li>Conducted extensive testing and debugging to ensure app functionality, usability, and security, reducing bugs by 40% while working with UI/UX designers to refine user interfaces and enhance user experiences across platforms.</li>
+        <li>Engineered and deployed a launch website for the app, integrating HTML, CSS, JavaScript, and MySQL to establish robust database connections and improving web performance by 25%.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Web Developer <span>Jun 2022 – Sep 2022</span></h3>
+      <p>BrandEQ Group - Toronto, ON</p>
+      <ul>
+        <li>Spearheaded the design of client websites using platforms like Wix and WordPress, focusing on user interface improvements and strategic content management to enhance digital engagement.</li>
+        <li>Managed and optimized content strategy for 4 business clients, organizing over 30 posts and media releases, resulting in a 25% boost in audience engagement and improved brand reputation.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Coding Instructor <span>Sep 2020 – Sep 2023</span></h3>
+      <p>Canada Learning Code - Toronto, ON</p>
+      <ul>
+        <li>Designed and implemented a diverse coding curriculum for students of varying skill levels, showcasing strong leadership and pedagogical skills.</li>
+        <li>Led engaging coding sessions in Java, Python, C++, Lua, and Gamemaker, fostering an environment of creativity and problem-solving, which culminated in student-led game and project development.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section id="projects">
+  <h1 class="section-title">Browse My Recent</h1>
+  <h2 class="section-subtitle">Projects</h2>
+
+  <div class="projects-container">
+    <div class="project-card">
+      <img src="./assets/project-1.png" alt="Protfolio Website" class="project-image">
+      <h3 class="project-title">Protfolio Website</h3>
+      <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/bashirumer/Personal-Protfolio'">Github</button>
+        <button class="btn btn-demo" onclick="location.href='https:'">Live Demo</button>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="./assets/project-2.png" alt="Project Two" class="project-image">
+      <h3 class="project-title">To-Do-List Application</h3>
+      <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/bashirumer/TO-DO-LIST-APPLICATION'">Github</button>
+        <button class="btn btn-demo" onclick="location.href='https:'">Live Demo</button>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="./assets/project-3.png" alt="Project Three" class="project-image">
+      <h3 class="project-title">Light Up Puzzle Game</h3>
+      <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/bashirumer/Light-Up-Puzzle-Game'">Github</button>
+        <button class="btn btn-demo" onclick="location.href='https://raptor764.github.io/lightup.github.io/'">Live Demo</button>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="./assets/project-4.png" alt="Project One" class="project-image">
+      <h3 class="project-title">Scissor Lift</h3>
+      <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/bashirumer/Scissor-Lift'">Github</button>
+        <button class="btn btn-demo" onclick="location.href='https:'">Live Demo</button>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="./assets/project-5.png" alt="Project Five" class="project-image">
+      <h3 class="project-title">Robotic Arm</h3>
+      <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https:'">Github</button>
+        <button class="btn btn-demo" onclick="location.href='https://www.youtube.com/watch?v=-oMqZgq5Ul0&ab_channel=UmerBashir'">Live Demo</button>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="./assets/project-6.png" alt="Project Six" class="project-image">
+      <h3 class="project-title">Genetic Algorthims & Optimization</h3>
+      <div class="project-buttons">
+        <button class="btn btn-github" onclick="location.href='https://github.com/bashirumer/Genetic-Algorithms-and-Optimization'">Github</button>
+        <button class="btn btn-demo" onclick="location.href='https:'">Live Demo</button>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+<section id="contact">
+  <p class="section__text__p1">Get in Touch</p>
+  <h1 class="title">Contact Me</h1>
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+      <img
+        src="./assets/email.png"
+        alt="Email icon"
+        class="icon contact-icon email-icon"
+      />
+      <p><a href="mailto:examplemail@gmail.com">bashirumer745@gmail.com</a></p>
+    </div>
+    <div class="contact-info-container">
+      <img
+        src="./assets/linkedin.png"
+        alt="LinkedIn icon"
+        class="icon contact-icon"
+      />
+      <p><a href="https://www.linkedin.com/in/umer-bashir-432823187/">LinkedIn</a></p>
+    </div>
+  </div>
+</section>
+<footer>
+  <nav>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <p>Copyright &#169; 2024 Umer Bashir. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+
+    
+</body>
+</html>
